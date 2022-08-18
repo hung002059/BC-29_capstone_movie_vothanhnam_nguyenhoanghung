@@ -1,0 +1,43 @@
+#header_nav{
+   nav{
+      h1,i{
+         color: whitesmoke;
+      }
+      .cart_layout{
+         button{
+               // background-color: transparent;
+               // border: transparent;
+         }
+         transition: all 0.5s;
+         &:hover{
+               i{
+                  color: silver;
+               }
+               span{
+                  background-color: silver;
+               }
+         }
+         i{
+            position: relative;
+            font-size: 30px;
+         }
+         .quantities{
+            position: absolute;
+            color:black;
+            background-color: white;
+            border-radius: 7px;
+         }
+         .dropdown:hover>.dropdown-menu {
+            display: block;
+            transform: translate(-50%,0);
+            table{
+               width: 400px;
+               height: auto;
+            }
+         }
+         .dropdown>.dropdown-toggle:active {
+            pointer-events: none;
+         }
+      }  
+   }
+}
